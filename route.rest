@@ -1,0 +1,33 @@
+GET http://localhost:3000/api/products
+Content-Type: application/json
+
+###
+
+PATCH http://localhost:3000/api/products/1 
+Authorization: Bearer mysecrettoken
+Content-Type: application/json
+
+{"price":998}
+
+
+
+###
+POST http://localhost:3000/api/products 
+Authorization: Bearer mysecrettoken
+Content-Type: application/json
+
+{
+  "name": "Tablet",
+  "description": "Lightweight Android tablet",
+  "price": 350,
+  "category": "electronics",
+  "inStock": true
+}
+###
+DELETE http://localhost:3000/api/products/1 
+Authorization: Bearer mysecrettoken
+Content-Type: application/json
+ 
+
+
+
